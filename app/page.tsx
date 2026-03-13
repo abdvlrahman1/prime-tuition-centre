@@ -291,7 +291,7 @@ export default function PrimeTuitionCentre() {
                               </div>
                               <div>
                                   <h4 className="font-bold text-lg text-[#003366]">Opening Hours</h4>
-                                  <p className="text-sm text-slate-500 mt-1">Monday — Sunday (Open Daily)</p>
+                                  <p className="text-sm text-slate-500 mt-1">Monday — Friday (Open Daily)</p>
                               </div>
                           </div>
                       </div>
