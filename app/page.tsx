@@ -250,7 +250,7 @@ export default function PrimeTuitionCentre() {
               <p className="text-blue-100 italic mb-6 leading-relaxed">"IGCSE math Studies was hard until I came here. My teacher made everything very simple and the revision packs were great for exams."</p>
               <div>
                 <h4 className="font-bold text-white">Fatuma K.</h4>
-                <p className="text-xs text-[#ff6600] uppercase tracking-wider mt-1">IGCSE Business & Economics</p>
+                <p className="text-xs text-[#ff6600] uppercase tracking-wider mt-1">IGCSE Maths & Physics</p>
               </div>
             </div>
           </div>
@@ -363,7 +363,7 @@ export default function PrimeTuitionCentre() {
 
       {/* --- FLOATING WHATSAPP BUTTON --- */}
       <a
-        href="https://wa.me/254723999810"
+        href="https://wa.me/254721797491"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform duration-300 flex items-center justify-center group border-[3px] border-white"
