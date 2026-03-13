@@ -27,7 +27,7 @@ export default function PrimeTuitionCentre() {
   }, []);
 
   return (
-    <main className="min-h-screen bg-white text-slate-900 font-sans selection:bg-[#003366] selection:text-white">
+    <main className="min-h-screen bg-white text-slate-900 font-sans selection:bg-[#003366] selection:text-white relative">
       
       {/* --- DESIGN SYSTEM --- */}
       <style jsx global>{`
@@ -42,26 +42,24 @@ export default function PrimeTuitionCentre() {
          <div className="max-w-[1200px] mx-auto px-6 flex justify-between items-center text-[11px] font-body font-bold uppercase tracking-widest">
              <div className="flex items-center gap-2">
                 <MapPin className="w-3 h-3 text-[#ff6600]" />
-                <span>South C, Nairobi | Next to Belleview Hospital</span>
+                <span>Rumi Ridge, South C, Nairobi</span>
              </div>
              <div className="flex gap-8">
                  <a href="tel:0723999810" className="hover:text-white transition-colors flex items-center gap-2">
                    Admissions: 0723 999 810
                  </a>
                  <span className="text-white/30">|</span>
-                 <span className="text-[#ff6600]">Mon - Sun: Open Daily</span>
+                 <span className="text-[#ff6600]">Mon - Fri: Open Daily</span>
              </div>
          </div>
       </div>
 
       {/* --- PREMIUM HERO SECTION --- */}
       <section className="relative min-h-[90vh] flex flex-col items-center justify-center text-center px-6 py-20 overflow-hidden">
-         {/* Highly Realistic AI-Generated Hero Image - Somali Students */}
          <div 
             className="absolute inset-0 bg-cover bg-center z-0"
             style={{ backgroundImage: "url('/hero-students.png')" }} 
          ></div>
-         {/* Deep Navy Overlay for contrast */}
          <div className="absolute inset-0 bg-[#003366]/90 z-0"></div>
          
          <div className="relative z-10 max-w-4xl mx-auto pt-10">
@@ -115,9 +113,8 @@ export default function PrimeTuitionCentre() {
         </div>
       </section>
 
-      {/* --- WHY CHOOSE US (Alternative: Grid Layout) --- */}
+      {/* --- WHY CHOOSE US --- */}
       <section className="py-24 px-6 bg-slate-50 relative overflow-hidden">
-        {/* Subtle Background Elements */}
         <div className="absolute top-0 left-0 w-full h-full opacity-[0.02] bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-[#003366] to-transparent"></div>
 
         <div className="max-w-[1200px] mx-auto relative z-10">
@@ -130,7 +127,6 @@ export default function PrimeTuitionCentre() {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {/* Card 1 */}
             <div className="bg-white p-8 rounded-2xl shadow-lg border border-slate-100 hover:-translate-y-2 transition-transform duration-300">
               <div className="w-14 h-14 rounded-xl bg-[#003366]/5 flex items-center justify-center mb-6">
                 <Users className="w-7 h-7 text-[#ff6600]" />
@@ -139,7 +135,6 @@ export default function PrimeTuitionCentre() {
               <p className="text-sm text-slate-600 leading-relaxed">Personalized attention ensuring no student is left behind, allowing for customized learning paces.</p>
             </div>
 
-            {/* Card 2 */}
             <div className="bg-white p-8 rounded-2xl shadow-lg border border-slate-100 hover:-translate-y-2 transition-transform duration-300">
               <div className="w-14 h-14 rounded-xl bg-[#ff6600]/5 flex items-center justify-center mb-6">
                 <Award className="w-7 h-7 text-[#003366]" />
@@ -148,7 +143,6 @@ export default function PrimeTuitionCentre() {
               <p className="text-sm text-slate-600 leading-relaxed">Taught by experienced examiners and subject-matter experts who know exactly what it takes to get an A*.</p>
             </div>
 
-            {/* Card 3 */}
             <div className="bg-white p-8 rounded-2xl shadow-lg border border-slate-100 hover:-translate-y-2 transition-transform duration-300">
               <div className="w-14 h-14 rounded-xl bg-[#003366]/5 flex items-center justify-center mb-6">
                 <Target className="w-7 h-7 text-[#ff6600]" />
@@ -157,7 +151,6 @@ export default function PrimeTuitionCentre() {
               <p className="text-sm text-slate-600 leading-relaxed">Intensive mastery of past papers, advanced exam techniques, and rigorous mock examinations.</p>
             </div>
 
-            {/* Card 4 */}
             <div className="bg-white p-8 rounded-2xl shadow-lg border border-slate-100 hover:-translate-y-2 transition-transform duration-300">
               <div className="w-14 h-14 rounded-xl bg-[#ff6600]/5 flex items-center justify-center mb-6">
                 <Globe className="w-7 h-7 text-[#003366]" />
@@ -179,25 +172,23 @@ export default function PrimeTuitionCentre() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-[1000px] mx-auto">
-               {/* British */}
                <div className="bg-white p-10 rounded-2xl border border-slate-200 hover:border-[#003366]/30 hover:shadow-2xl transition-all duration-300 group relative overflow-hidden">
                    <div className="absolute top-0 right-0 w-32 h-32 bg-[#003366]/5 rounded-bl-full -z-10 group-hover:bg-[#003366]/10 transition-colors"></div>
                    <div className="w-14 h-14 bg-[#003366] rounded-xl flex items-center justify-center shadow-md mb-6 group-hover:-translate-y-1 transition-transform">
                        <ShieldCheck className="w-7 h-7 text-white" />
                    </div>
-                   <h3 className="font-heading text-3xl text-[#003366] mb-2 font-bold">British System</h3>
-                   <p className="font-body text-xs font-bold text-[#ff6600] uppercase tracking-widest mb-4">Edexcel / Pearson / Cambridge</p>
+                   <h3 className="font-heading text-3xl text-[#003366] mb-2 font-bold">British System I.G.C.S.E </h3>
+                   <p className="font-body text-xs font-bold text-[#ff6600] uppercase tracking-widest mb-4">Edexcel Pearson and Cambridge</p>
                    <p className="font-body text-slate-600 mb-8 text-sm leading-relaxed">
-                       Comprehensive tuition for IGCSE and A-Levels with a strong focus on STEM subjects, Mathematics, and Business.
+                       Primary- Secondary - A levels 
                    </p>
                    <ul className="space-y-4 pt-6 border-t border-slate-100">
                        <li className="flex items-center gap-3 font-body text-sm font-medium text-slate-700"><CheckCircle2 className="w-5 h-5 text-[#ff6600]" /> Pure & Further Mathematics</li>
                        <li className="flex items-center gap-3 font-body text-sm font-medium text-slate-700"><CheckCircle2 className="w-5 h-5 text-[#ff6600]" /> Physics, Chemistry & Biology</li>
-                       <li className="flex items-center gap-3 font-body text-sm font-medium text-slate-700"><CheckCircle2 className="w-5 h-5 text-[#ff6600]" /> Economics & Business Studies</li>
+                       <li className="flex items-center gap-3 font-body text-sm font-medium text-slate-700"><CheckCircle2 className="w-5 h-5 text-[#ff6600]" /> English & Computer studies </li>
                    </ul>
                </div>
 
-               {/* American */}
                <div className="bg-white p-10 rounded-2xl border border-slate-200 hover:border-[#ff6600]/30 hover:shadow-2xl transition-all duration-300 group relative overflow-hidden">
                    <div className="absolute top-0 right-0 w-32 h-32 bg-[#ff6600]/5 rounded-bl-full -z-10 group-hover:bg-[#ff6600]/10 transition-colors"></div>
                    <div className="w-14 h-14 bg-[#ff6600] rounded-xl flex items-center justify-center shadow-md mb-6 group-hover:-translate-y-1 transition-transform">
@@ -256,7 +247,7 @@ export default function PrimeTuitionCentre() {
               <div className="flex gap-1 mb-6">
                 {[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 fill-[#ff6600] text-[#ff6600]" />)}
               </div>
-              <p className="text-blue-100 italic mb-6 leading-relaxed">"IGCSE Business Studies was hard until I came here. My teacher made everything very simple and the revision packs were great for exams."</p>
+              <p className="text-blue-100 italic mb-6 leading-relaxed">"IGCSE math Studies was hard until I came here. My teacher made everything very simple and the revision packs were great for exams."</p>
               <div>
                 <h4 className="font-bold text-white">Fatuma K.</h4>
                 <p className="text-xs text-[#ff6600] uppercase tracking-wider mt-1">IGCSE Business & Economics</p>
@@ -268,7 +259,6 @@ export default function PrimeTuitionCentre() {
 
       {/* --- LOCATION SECTION --- */}
       <section id="location" className="py-24 px-6 bg-slate-50 text-slate-900 border-b border-slate-200 relative overflow-hidden">
-          {/* Subtle Background Pattern */}
           <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(#003366 1px, transparent 1px)', backgroundSize: '30px 30px' }}></div>
           
           <div className="max-w-[1200px] mx-auto relative z-10">
@@ -280,7 +270,7 @@ export default function PrimeTuitionCentre() {
                           <span className="text-[#ff6600] font-bold text-xs uppercase tracking-widest mb-2 block">Visit Us</span>
                           <h2 className="font-heading text-4xl font-bold mb-6 text-[#003366]">Campus Location</h2>
                           <p className="font-body text-slate-600 text-lg leading-relaxed">
-                              Located in the secure Popo Road environs of South C, conveniently next to Belleview South Hospital.
+                              Located in the secure environs of Rumi Ridge, South C. Easy to access and providing a quiet, dedicated environment for learning.
                           </p>
                       </div>
 
@@ -290,8 +280,8 @@ export default function PrimeTuitionCentre() {
                                 <MapPin className="w-5 h-5 text-[#ff6600]" />
                               </div>
                               <div>
-                                  <h4 className="font-bold text-lg text-[#003366]">South C, Nairobi</h4>
-                                  <p className="text-sm text-slate-500 mt-1">Next to Belleview Hospital</p>
+                                  <h4 className="font-bold text-lg text-[#003366]">Rumi Ridge, South C</h4>
+                                  <p className="text-sm text-slate-500 mt-1">Nairobi, Kenya</p>
                               </div>
                           </div>
                           
@@ -306,8 +296,9 @@ export default function PrimeTuitionCentre() {
                           </div>
                       </div>
 
+                      {/* Updated Directions Link */}
                       <a 
-                        href="https://www.google.com/maps/search/Belleview+South+Hospital+South+C+Nairobi" 
+                        href="https://www.google.com/maps/search/?api=1&query=Rumi+Ridge+South+C+Nairobi" 
                         target="_blank" 
                         rel="noreferrer"
                         className="inline-flex items-center justify-center gap-2 bg-[#003366] text-white px-8 py-4 rounded font-bold text-sm uppercase tracking-widest hover:bg-[#ff6600] transition-colors w-fit shadow-xl"
@@ -316,18 +307,18 @@ export default function PrimeTuitionCentre() {
                       </a>
                   </div>
 
-                  {/* RIGHT: The Map Visual */}
+                  {/* RIGHT: The Map Visual - UPDATED IFRAME */}
                   <div className="md:col-span-7 w-full h-[450px] bg-white rounded-xl p-3 shadow-2xl border border-slate-100">
                       <div className="w-full h-full rounded-lg relative overflow-hidden">
                           <iframe 
-                            src="https://maps.google.com/maps?q=Belleview%20South%20Hospital%20Nairobi&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                            src="https://maps.google.com/maps?q=Rumi%20Ridge,%20South%20C,%20Nairobi&t=&z=15&ie=UTF8&iwloc=&output=embed"
                             width="100%" 
                             height="100%" 
                             style={{ border: 0 }} 
                             allowFullScreen 
                             loading="lazy" 
                             className="transition-all duration-500"
-                            title="Map of Prime Tuition Centre"
+                            title="Map of Prime Tuition Centre at Rumi Ridge"
                           ></iframe>
                       </div>
                   </div>
@@ -360,7 +351,7 @@ export default function PrimeTuitionCentre() {
               <h4 className="font-bold text-lg mb-6">Contact</h4>
               <ul className="space-y-3 text-sm text-blue-200">
                 <li>Call: 0723 999 810</li>
-                <li>Location: South C, Nairobi</li>
+                <li>Location: Rumi Ridge, South C</li>
                 <li>Open Daily</li>
               </ul>
             </div>
@@ -370,6 +361,18 @@ export default function PrimeTuitionCentre() {
           </div>
       </footer>
 
+      {/* --- FLOATING WHATSAPP BUTTON --- */}
+      <a
+        href="https://wa.me/254723999810"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform duration-300 flex items-center justify-center group border-[3px] border-white"
+        aria-label="Chat on WhatsApp"
+      >
+        <svg className="w-8 h-8 fill-current" viewBox="0 0 24 24">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51h-.57c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+      </a>
     </main>
   );
 }
